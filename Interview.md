@@ -79,11 +79,11 @@
 
 ### JavaScript
 
-13. (Medium) What does NaN stand for in JavaScript and how can you test whether a value is equal to NaN?
+13. (Basic) In JavaScript, what are the major differences between == and ===?
 
 14. (Basic) Given an array that is three elements long, how would you go about removing the second element so that the array only contains the other two elements and nothing else?
 
-15. (Basic) In JavaScript, what are the major differences between == and ===?
+15. (Medium) What does NaN stand for in JavaScript and how can you test whether a value is equal to NaN?
 
 16. (Medium) Without having to use any kind of external JavaScript library, describe what JavaScript code you would use to search through a table.
 
@@ -121,11 +121,11 @@
 
 ### Other Topics (Tableau, Machine Learning (Map Reduce in Hadoop), R, AWS, VBA, Excel, Statistics)
 
-31.
+31. What function do VLookups and HLookups perform in Microsoft Excel? 
 
-32.
+32. What is VBA and 
 
-33.
+33. 
 
 34.
 
