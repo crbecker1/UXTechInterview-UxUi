@@ -79,37 +79,37 @@
 
 ### JavaScript
 
-13. 
+13. (Medium) What does NaN stand for in JavaScript and how can you test whether a value is equal to NaN?
 
-14.
+14. (Basic) Given an array that is three elements long, how would you go about removing the second element so that the array only contains the other two elements and nothing else?
 
-15.
+15. (Basic) In JavaScript, what are the major differences between == and ===?
 
-16.
+16. (Medium) Without having to use any kind of external JavaScript library, describe what JavaScript code you would use to search through a table.
 
-17. 
+17. (Medium) When using D3, what is data binding and why would you want to use it?
 
-18.
+18. (Medium) What libraries, other than jQuery, could we use in order to call data from an API and how might we go about doing so?
 
-19.
+19. (Hard) Describe to me how you would create a line chart using D3.
 
-20.
+20. (Hard) What are the differences between JSON and GeoJSON and what kind of applications can we create using these two data formats?
 
 ### HTML / CSS
 
-21.
+21. (Basic) What are the element tags used to create a table in HTML?
 
-22.
+22. (Basic) Why is it common practice to store CSS rules outside of your HTML?
 
-23.
+23. (Medium) What is the CSS Box Model used for and what are the elements that it includes?
 
-24.
+24. (Hard) What are the situations in which we would want to use a class over an id? What are the situations in which we would want to use an id over a class?
 
-25.
+25. (Hard) What is the float property used for in CSS and how do you prevent other elements from flowing around the floated element?
 
-### Databases
+### Databases (SQL and Mongo)
 
-26.
+26. (Easy) When running SQL code, 
 
 27.
 
@@ -119,7 +119,7 @@
 
 30.
 
-### Other Topics
+### Other Topics (Tableau, Machine Learning (Map Reduce in Hadoop), R, AWS, VBA, Excel, Statistics)
 
 31.
 
