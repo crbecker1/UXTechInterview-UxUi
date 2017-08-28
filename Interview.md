@@ -109,15 +109,15 @@
 
 ### Databases (SQL and Mongo)
 
-26. (Easy) When running SQL code, 
+26. (Basic) What would happen if you made a database using MySQL and then ran the exact same code a second time?
 
-27.
+27. (Medium) What are the advantages and disadvantages of a SQL database and a NoSQL database?
 
-28.
+28. (Medium) Explain joins in MySQL and what are the differences between inner, outer, left, and right joins?
 
-29.
+29. (Medium) How do you set a series of values as the primary key in MySQL?
 
-30.
+30. (Hard) What is sharding?
 
 ### Other Topics (Tableau, Machine Learning (Map Reduce in Hadoop), R, AWS, VBA, Excel, Statistics)
 
@@ -133,15 +133,15 @@
 
 ### Critical Thinking Ability
 
-36. 
+36. Given a very limited time budget, how would you go about answering the question "Which do Americans prefer: Italian food or Mexican food?"
 
-37.
+37. What readily available resources could you use to create a cultural map of New York City?
 
-38.
+38. A student asks you a question which you do not readily know the answer to, what is the process you would take to provide them with a solution?
 
-39.
+39. In what situations would you want to use a line graph, bar graph, or scatter plot?
 
-40.
+40. You are an archaeologist and find what you think is a goblet during one of your digs. What tests could you perform on your find to acquire new data?
 
 ### General Comments
 
