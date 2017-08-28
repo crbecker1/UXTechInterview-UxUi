@@ -10,19 +10,19 @@
 
 ### Python 
 
-1. (Basic) What does it mean for an object to be "iterable" in Python? What are two examples of iterable objects in Python?
+3. (Basic) What does it mean for an object to be "iterable" in Python? What are two examples of iterable objects in Python?
 
     - Iterables are objects that can be iterated over -- as in a for loop. This means that we can run code repeatedly as we step through it's elements.
 
     - Examples of iterable objects include: Lists, Tuples, Set, Frozenset
 
-2. (Basic) What is the difference between a "list" and a "dictionary" in Python? When might you use one vs. the other?
+4. (Basic) What is the difference between a "list" and a "dictionary" in Python? When might you use one vs. the other?
 
     - A list is a data structure that stores elements in defined order. (i.e. We add elements to a list in a specified order. Index 0 stores a particular value. Index 5 stores a particular value. Note: Lists are called "arrays" in JavaScript).
 
     - A dictionary is a data structure that stores elements in key-value pairs. (i.e. The key "name" may relate to the value of "Joan of Arc", the key "age" may relate to the number 15. Note: Dictionaries are similar to "objects" in JavaScript).
 
-3. (Basic) What method would you use to add elements to a "list" in python?
+5. (Basic) What method would you use to add elements to a "list" in python?
     
     `.append` as in:
     
@@ -31,7 +31,7 @@
     a.append(6)
     ```
 
-4. (Medium) How would you describe what a module is to a novice developer? How would you describe what a package is? How would you include a Python module in an application? How would you include a Python package in an application?
+6. (Medium) How would you describe what a module is to a novice developer? How would you describe what a package is? How would you include a Python module in an application? How would you include a Python package in an application?
 
     - A module is simply a Python source file that exposes classes, functions, and global variables. 
 
@@ -53,13 +53,13 @@
     r.json()
     ```
 
-5. (Hard) What are the essential data structures in Python Pandas? What advantages do they afford for data analysts?
+8. (Hard) What are the essential data structures in Python Pandas? What advantages do they afford for data analysts?
 
     - Python Pandas introduces the Series, DataFrame, and GroupBy Objects. (They key data structure is the DataFrame).
 
     - DataFrames are a programmatic version of spreadsheets. They provide a host of functions for interacting with spreadsheets based on index, column, conditionals, and more. They allow a data analyst to quickly manipulate and explore large datasets. 
 
-6. (Hard) What exactly is a Jupyter notebook? Why is it useful for data analysts?
+8. (Hard) What exactly is a Jupyter notebook? Why is it useful for data analysts?
 
     - Jupyter Notebooks are an alternative method for writing Python applications that involve data manipulation and exploration. Unlike the traditional IDE, Jupyter Notebook allows a developer to execute short lines of Python code and immediately see the output in real time. (No need for debugging, the output displays the moment you execute a statement block-by-block). 
 
@@ -67,11 +67,11 @@
 
     - An example Jupyter notebook can be found [here](http://nbviewer.jupyter.org/github/Jay-Oh-eN/happy-healthy-hungry/blob/master/h3.ipynb).
 
-8. (Hard) What Python library might one use to build a plot (pie chart, scatter plot, or otherwise)?
+10. (Hard) What Python library might one use to build a plot (pie chart, scatter plot, or otherwise)?
 
     - The most common plotting libraries in Python include: Matplotlib, Seaborn, ggplot, Bokeh, and Plotly
 
-9. (Hard) What exactly do the Python libraries Beautiful Soup and Scrapy do? How do they work at a high-level?
+11. (Hard) What exactly do the Python libraries Beautiful Soup and Scrapy do? How do they work at a high-level?
 
     - Beautiful Soup and Scrapy are "web scraping" libraries.
 
