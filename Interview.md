@@ -143,4 +143,15 @@
 
 40.
 
+### General Comments
+
+41. Communication
+
+42. Passion
+
+43. Personality
+
+44. Quality / Amount of Questions Asked
+
+45. Impressiveness
 
