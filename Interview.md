@@ -79,79 +79,146 @@
 
 ### JavaScript
 
-13. (Basic) In JavaScript, what are the major differences between == and ===?
+13. (Basic) In JavaScript, what are the major differences between `==` and `===`?
 
-14. (Basic) Given an array that is three elements long, how would you go about removing the second element so that the array only contains the other two elements and nothing else?
+    - The `===` is a conditional check for type and value.
+
+    - The `==` is a conditional check for just value (i.e. Ignores type).
+
+    - `3 === 3 but 3 !== "3"`
+
+14. (Medium) Given an array that is three elements long, how would you remove the second element without modifying the other two elements?
+
+    - `array.splice(1)`
 
 15. (Medium) What does NaN stand for in JavaScript and how can you test whether a value is equal to NaN?
 
-16. (Medium) Without having to use any kind of external JavaScript library, describe what JavaScript code you would use to search through a table.
+    - `isNan(value)`
 
-17. (Medium) When using D3, what is data binding and why would you want to use it?
+16. (Medium) What JavaScript method or library might you use to perform a GET request to a public RESTful API?
 
-18. (Medium) What libraries, other than jQuery, could we use in order to call data from an API and how might we go about doing so?
+    - There are a number of options here, including: jQuery AJAX, JavaScript Fetch, D3 Request, Angular $http, etc. 
 
-19. (Hard) Describe to me how you would create a line chart using D3.
+17. (Medium) If you were building a map filled with markers to indicate key locations in the dessert, how might you store the locations in a JSON object?
+    
+    - `{name: "Marker 1", lat: 34.00, lng: 32.00}`
 
-20. (Hard) What are the differences between JSON and GeoJSON and what kind of applications can we create using these two data formats?
+18. (Medium) What is data binding and why is it important in data visualization?
+
+    - Data binding is the concept by which data in an application is directly tied to the user interface in some way. As the underlying data in the application changes, so too will the visual representation in the UI.
+
+    - In the case of data visualization, live feeds of data should trigger live changes in the UI. Frameworks like D3 and Angular include sophisticated handling for data binding.
+
+19. (Medium) What is callback hell?
+
+    - Callback hell occurs when a JavaScript function involves multiple layers of callbacks nested within one another. 
+
+20. (Hard) Define "Constructor" in JavasScript. How would you describe an example use case of a constructor?
+
+    - Constructors are special methods for creating and initializing objects created within a class. 
+
+    - An example use case of a constructor would be if we needed to create multiple "car" objects. Each car object was given a set of pre-defined shared methods like drive or honk, but with user customizable colors and models. A constructor could thus be used to create the template by which all future car objects were created. 
+
+21. (Hard) Using D3, how might you select all paragraph elements and apply a background color of alice-blue?  
+
+    - `d3.selectAll("p").style("background-color", "alice-blue")` 
 
 ### HTML / CSS
 
-21. (Basic) What are the element tags used to create a table in HTML?
+22. (Basic) What is the CSS Box Model and what are its components?
 
-22. (Basic) Why is it common practice to store CSS rules outside of your HTML?
+    - The CSS Box Model is a way of representing all HTML elements in the form of boxes in the DOM.
 
-23. (Medium) What is the CSS Box Model used for and what are the elements that it includes?
+    - The CSS Box Model is composed of an element, it's padding, border, and margin.
 
-24. (Hard) What are the situations in which we would want to use a class over an id? What are the situations in which we would want to use an id over a class?
+23. (Basic) Explain the concept of "flow" in HTML/CSS. What happens when a block element is floated to the left? What happens when no float is applied?
 
-25. (Hard) What is the float property used for in CSS and how do you prevent other elements from flowing around the floated element?
+    - Flow is the concept of how HTML / CSS positions elements on the screen. When a block element is floated to the left it will appear on the far left of the containing element. It also means that the next element in the DOM will appear adjacent to it on the right. 
+
+    - When no float is applied, block level elements take up the entire row. The next element, thus appears on the next line. 
 
 ### Databases (SQL and Mongo)
 
-26. (Basic) What would happen if you made a database using MySQL and then ran the exact same code a second time?
+24. (Basic) Let's say you have a table called: "School-Records" stored in a MySQL database. How might you run a query to retrieve all data from from the "School-Records" table? How might you receive only the records for which the data in the "Grade" column was below a 70?
 
-27. (Medium) What are the advantages and disadvantages of a SQL database and a NoSQL database?
+    - `SELECT * FROM School-Records`
 
-28. (Medium) Explain joins in MySQL and what are the differences between inner, outer, left, and right joins?
+    - `SELECT * FROM School-Records WHERE Grade < 70`
 
-29. (Medium) How do you set a series of values as the primary key in MySQL?
+25. (Medium) What is the key difference between a SQL and NoSQL Database?
 
-30. (Hard) What is sharding?
+    - SQL Databases involve storing data in tables filled with rows and columns. Data can be retrieved by joining tables together prior to running queries.
+
+    - NoSQL Databases involve storing data in a roughly JSON format. Data is stored in collections composed of documents. Data can involve deeply nested properties within a single document.  
+
+26. (Medium) Explain the concept of joins in MySQL. What are the differences between an inner and outer join?
+
+    - A join is effectively a combination of tables based on a shared values in a common set of columns.
+
+    - An inner join involves combining the tables only where there is an exact column match. Any rows that do exist in one table but not the other will be excluded from the join. In essence this is an "intersection".
+
+    - An outer join involves combining the data where there is an exact column match, but also including those rows without a column match. In essence, rows without a column match, will be included but filled with empty values where no associated values could be found. In essence, this is a "union".
+
+27. (Medium) What is a SQL Injection Attack and how could we prevent it?
+
+    - A SQL Injection attack is when a hacker gains inserts SQL commands into an unintended database access point. A classic example of this is when a hacker inserts SQL commands into a text-box in a user-interface; thus allowing them to manipulate the core database.
+
+    - To prevent a SQL Injection attack involves using prepared statements or interface logic to thwart SQL statements from being executed.
+
+28. (Hard) What is sharding? Why might we want to use it?
+
+    - Sharding is a database partitioning strategy in which a database is broken into separate server instance to spread the load. 
+
+    - Sharding is important when our dataset becomes extremely large. In these cases, storing data in a single server (no matter how powerful) will actually **decrease** performance. This is largely because read-write operations for data stored in memory are an intrinsically rate-limiting operation. By splitting datasets across multiple servers, you can take advantage of each server to perform large quantities of these read-write operations at the same time.
 
 ### Other Topics (Tableau, Machine Learning (Map Reduce in Hadoop), R, AWS, VBA, Excel, Statistics)
 
-31. What function do VLookups and HLookups perform in Microsoft Excel? 
+29. (Medium) What function do VLookups and HLookups perform in Microsoft Excel? 
+    
+    - VLookups and HLookups are used to "look-up" values associated with one record according to another. As an example, let's say we had two tables: one filled with items and quantities and the second with items and prices. We could use a VLookup to retrieve the price associated with each item to calculate the total for each order.
 
-32. What is VBA and 
+    - The difference between a VLookup and an HLookup has to do with the orientation of the table we are retrieving data from. If the source data is in a horizontal table, we use an HLookup. If the source data is in a vertical table, we use a VLookup.   
 
-33. 
+30. (Medium) Define Regression
 
-34.
+    - Regression is a modeling technique in which a relationship is established between two variables -- one being a dependent variable and the other being an independent variable. The assumption in regression is that the occurrence of one set of variables correlates with a predictable occurrence of the second set of variables.  
 
-35.
+31. (Hard) Explain the concept of a Map Reduce. What does it have to do with Hadoop?
+
+    - Map Reduce is a programming model for processing large data sets. The Map() procedure is for filtering and sorting. The Reduce() procedure is for summarizing the resulting sorted data into categories or counts.
+
+    - Hadoop originally began as an open-source implementation of Google's MapReduce technology.  
+
+32. (Hard) In traditional machine learning, what is the difference between "Supervised" and "Unsupervised" learning?
+
+    - Supervised learning is where a "training" dataset marked by "correct answers" is provided to to establish an algorithm. The resulting algorithm is then used to predict correct answers for a non-training set. An example of this would be in a spam classifier where large examples of spam are provided to "train" an algorithm.
+
+    - Unsupervised learning is where no "training" dataset is provided. In essence, the algorithm is provided a large dataset and tasked with identifying trends. An example of this would be an anomaly detector where a large dataset is provided and pointed differences are "caught" by the algorithm. 
 
 ### Critical Thinking Ability
 
-36. Given a very limited time budget, how would you go about answering the question "Which do Americans prefer: Italian food or Mexican food?"
+33. (Hard) Let's say you are given the task of answering the question: "Which do Americans prefer more Italian food or Mexican food?" How might you most definitively answer the question if you cannot conduct live surveys and are only given 5 hours of time.
 
-37. What readily available resources could you use to create a cultural map of New York City?
+     - There can be many answers to this one, but one possible solution is to use the Yelp API to scrape the review counts and ratings of the top 20 Italian and Mexican restaurants in thousands of zip codes in the US. Once all the data is compiled, you can compare the counts and reviews for the aggregated data.
 
-38. A student asks you a question which you do not readily know the answer to, what is the process you would take to provide them with a solution?
+     - The key is that the interviewee engages the question and shows a creative ability to use technology to solve the problem with true rigor.  
 
-39. In what situations would you want to use a line graph, bar graph, or scatter plot?
+34. (Hard) Let's say you are tasked with identifying which neighborhoods are most rapidly gentrifying (converting from traditionally poor to more affluent neighborhoods). How might you determine where this is taking place and report on your findings? 
 
-40. You are an archaeologist and find what you think is a goblet during one of your digs. What tests could you perform on your find to acquire new data?
+    - There can be many answers to this one, but one possible solution is to use the Google Radar API in conjunction with the Zillow API and US Census to identify the number of coffee shops and/or upscale restaurants appearing in neighborhoods with traditionally lower-income populations.  
+
+    - These findings could then be provided in the form of a Google Map with overlaid markers on color-coded zipcodes to indicate relative income level.
 
 ### General Comments
 
-41. Communication
+35. Communication
 
-42. Passion
+36. Passion
 
-43. Personality
+37. Personality
 
-44. Quality / Amount of Questions Asked
+38. Quality / Amount of Questions Asked
 
-45. Impressiveness
+39. Impressiveness
 
+40. Well-Roundedness (Did they seem competent across all categories?)
