@@ -171,7 +171,7 @@
 
     - Sharding is important when our dataset becomes extremely large. In these cases, storing data in a single server (no matter how powerful) will actually **decrease** performance. This is largely because read-write operations for data stored in memory are an intrinsically rate-limiting operation. By splitting datasets across multiple servers, you can take advantage of each server to perform large quantities of these read-write operations at the same time.
 
-### Other Topics (Tableau, Machine Learning (Map Reduce in Hadoop), R, AWS, VBA, Excel, Statistics)
+### Other Topics (Excel, Statistics, Hadoop, and Machine Learning)
 
 29. (Medium) What function do VLookups and HLookups perform in Microsoft Excel? 
     
